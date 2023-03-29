@@ -13,15 +13,15 @@ public class Main3 {
             HttpRequest request = HttpRequest.newBuilder( new URI("https://www.google.ru/?hl=ru")).build();
             HttpClient client = HttpClient.newBuilder().build();
 
-            Authenticator auth = new Authenticator() {
-                @Override
-                protected PasswordAuthentication getPasswordAuthentication() {
-                    return super.getPasswordAuthentication(){
-                        "username", "password".toCharArray()};
-                }
-            };
-
-            HttpResponse<String> responseAuth = HttpClient.newBuilder().authenticator(auth).build().send(request, HttpResponse.BodyHandlers.ofString());
+//            Authenticator auth = new Authenticator() {
+//                @Override
+//                protected PasswordAuthentication getPasswordAuthentication() {
+//                    return super.getPasswordAuthentication(){
+//                        "username", "password".toCharArray()};
+//                }
+//            };
+//
+//            HttpResponse<String> responseAuth = HttpClient.newBuilder().authenticator(auth).build().send(request, HttpResponse.BodyHandlers.ofString());
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
