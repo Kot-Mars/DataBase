@@ -1,0 +1,14 @@
+{
+  "name": "John",
+  "email": "john@example.ru",
+  "phoneNumbers": [
+    "555-5555",
+    "111-1111"
+  ],
+  "address": {
+    "street": "123 Main St",
+    "city": "Spb",
+    "State": "RU",
+    "zip": "123456"
+  }
+}
